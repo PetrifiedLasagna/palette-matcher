@@ -14,3 +14,7 @@ Command Line Options:
 TODO:
 -Add exporting/importing palette to source image
 -Maybe add option to scale new image
+
+License:
+
+If you use this code or application, if it is modified or not, in any of your PUBLIC projects(finished application or source code) you must have a link to this repository somewhere in your application files(e.g. readme.txt) As well as mentioning my username and crediting with development of this specific code.
