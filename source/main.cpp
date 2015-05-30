@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "../GJ/tga-load.h"
+#include "tga-load.h"
 
 char args[] = {'s', 'p', 'o'};
 
