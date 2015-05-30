@@ -142,7 +142,7 @@ int main(int argc, char *argv[]){
             }
         }
     } else {
-        printf("You must enter two images in this format\n-s\"path\\to\\img.tga\"\n-p\"path\\to\\pal.tga\"\n");
+        printf("You must enter two images in this format\n-s\"path\\to\\img.tga\"\n-p\"path\\to\\pal.tga\"\n-o\"outputfile.tga\"\n");
     }
 
     printf("complete");
