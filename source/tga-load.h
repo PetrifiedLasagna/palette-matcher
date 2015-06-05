@@ -18,8 +18,8 @@ public:
     int tga_save(char[]);
     void tga_free();
 
-    RGBA get_RGB(long x, long y);
-    void set_RGB(long x, long y, RGBA col);
+    RGBA get_pixel(long x, long y);
+    void set_pixel(long x, long y, RGBA col);
 
     long height, width;
     int bpp;

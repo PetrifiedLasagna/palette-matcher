@@ -134,7 +134,7 @@ void tga::tga_free(){
     width = height = bpp = 0;
 }
 
-RGBA tga::get_RGB(long x, long y){
+RGBA tga::get_pixel(long x, long y){
     RGBA ret;
 
     ret.R = img[(x + width * y) * bpp];
@@ -149,7 +149,7 @@ RGBA tga::get_RGB(long x, long y){
     return ret;
 }
 
-void tga::set_RGB(long x, long y, RGBA col){
+void tga::set_pixel(long x, long y, RGBA col){
     img[(x + width * y) * bpp] = col.R;
     img[(x + width * y) * bpp + 1] = col.G;
     img[(x + width * y) * bpp + 2] = col.B;
