@@ -71,11 +71,14 @@ int tga::tga_load(char name[]){
 }
 
 int tga::tga_save(char name[]){
+    if(img == NULL)
+        return 1;
+
     FILE *f;
     f = fopen(name, "wb");
 
-    if(!f || img == NULL)
-        return 1;
+    if(!f)
+        return 2;
 
     typedef struct TGAH {
         char offset;
