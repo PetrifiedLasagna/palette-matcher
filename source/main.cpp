@@ -43,7 +43,7 @@ int RGBA_get_unique(tga *src, RGBA **colors, int diff, int maxc){
                 bool exists = false;
 
                 for(int i = 0; i < src_cnum; i++){
-                    if(RGBA_diff(src_colors[i], col) < diff){
+                    if(RGBA_diff(src_colors[i], col) <= diff){
                         exists = true;
                         break;
                     }
@@ -234,7 +234,7 @@ int main(int argc, char *argv[]){
 
                         if(pal.img != NULL){
                             if(!ret.tga_alloc(src.width, src.height, src.bpp)){
-                                pal_coln = RGBA_get_unique(&pal, &pal_colors, 0, -1);
+                                pal_coln = RGBA_get_unique(&pal, &pal_colors, -1, -1);
 
                                 for(int y = 0; y < src.height; y++){
                                     for(int x = 0; x < src.width; x++){
