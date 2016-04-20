@@ -43,7 +43,7 @@ int RGBA_get_unique(tga *src, RGBA **colors, int diff, int maxc){
                 bool exists = false;
 
                 for(int i = 0; i < src_cnum; i++){
-                    if(RGBA_diff(src_colors[i], col) <= diff){
+                    if(RGBA_diff(src_colors[i], col) < diff){
                         exists = true;
                         break;
                     }
